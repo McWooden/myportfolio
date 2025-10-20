@@ -5,7 +5,7 @@ import { InteractiveShadow } from '@/app/components/InteractiveShadow'; // Adjus
 export default function Home() {
   return (
     <section className="flex-1 flex items-end justify-center h-[100dvh] overflow-hidden">
-      <InteractiveShadow color="#fff" baseShadowY={-10}>
+      <InteractiveShadow color="#fff" baseShadowY={0}>
         <Image
           src="/huddin.webp"
           alt="Welcome Image"
