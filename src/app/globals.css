@@ -5,6 +5,8 @@
   --font-secondary: 'Poppins', sans-serif;
   --color-base: #f8fafd;
   --color-just-black: #0e100f;
+  --color-just-blue: #4169e1;
+  --color-just-purple: #4716ed;
 }
 
 * {
@@ -21,6 +23,6 @@ body {
 }
 
 .my-bg-radial {
-  background: radial-gradient(circle at bottom, #4169e1 0%,  #4716ed 100%);
+  background: radial-gradient(circle at bottom, var(--color-just-blue) 0%, var(--color-just-purple) 100%);
   /* Require: Add height or other utilities for full coverage */
 }

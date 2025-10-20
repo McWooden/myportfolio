@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Montserrat, Poppins } from "next/font/google";
 import "./globals.css";
+import Navbar from "./components/Navbar";
 
 export const montserrat = Montserrat({
   subsets: ['latin'],
@@ -18,7 +19,7 @@ export const poppins = Poppins({
 export const metadata: Metadata = {
   title: {
     default: 'Huddin | KardusDeveloper',
-    template: '%s | Huddin',
+    template: '%s | Huddin | KardusDeveloper',
   },
   description: 'My Personal Portfolio.',
   keywords: ['nextjs', 'app', 'example'],
@@ -30,7 +31,7 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://yourdomain.com'),
+  metadataBase: new URL('https://kardusdeveloper.vercel.app'),
   alternates: {
     canonical: '/',
     languages: {
@@ -39,13 +40,13 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'Your App',
-    description: 'A description of your app goes here.',
-    url: 'https://yourdomain.com',
+    title: 'Huddin | KardusDeveloper - Personal Portfolio',
+    description: 'My Personal Portfolio. Journey of KardusDeveloper',
+    url: 'https://kardusdeveloper.vercel.app',
     siteName: 'Your App',
     images: [
       {
-        url: 'https://yourdomain.com/og-image.jpg',
+        url: 'https://kardusdeveloper.vercel.app/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Your App Open Graph Image',
@@ -58,7 +59,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Your App',
     description: 'A description of your app goes here.',
-    images: ['https://yourdomain.com/twitter-image.jpg'],
+    images: ['https://kardusdeveloper.vercel.app/twitter-image.jpg'],
     creator: '@yourtwitterhandle',
   },
   robots: {
@@ -91,7 +92,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon/favicon.ico" sizes="any" />
+      </head>
       <body className={`${montserrat.variable} ${poppins.variable} antialiased flex flex-col`}>
+        <Navbar/>
         {children}
       </body>
     </html>

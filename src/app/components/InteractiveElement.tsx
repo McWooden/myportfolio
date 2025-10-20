@@ -8,6 +8,7 @@ interface InteractiveElementProps {
   amountX?: number;
   amountY?: number;
   transition?: string;
+  id?: string;
 }
 
 export function InteractiveElement({
@@ -16,6 +17,7 @@ export function InteractiveElement({
   amountX = 5,
   amountY = 5,
   transition = 'transform 1s ease-out',
+  id = '',
 }: InteractiveElementProps) {
   const [imageOffset, setImageOffset] = useState({ x: 0, y: 0 });
   const containerRef = useRef<HTMLDivElement | null>(null);
@@ -68,7 +70,7 @@ export function InteractiveElement({
   });
 
   return (
-    <div ref={containerRef} className={className}>
+    <div ref={containerRef} className={className} id={id}>
       {styledChildren}
     </div>
   );
