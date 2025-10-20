@@ -4,8 +4,7 @@ import { InteractiveShadow } from '@/app/components/InteractiveShadow'; // Adjus
 
 export default function Home() {
   return (
-    <section className="relative flex-1 flex flex-col items-center justify-center h-[100dvh] overflow-hidden my-bg-blue-radial-bg-at-bottom">
-      <HuddinVideoMask/>
+    <section className="relative flex-1 flex flex-col items-center justify-center h-[100dvh] overflow-hidden bg-blue-radial">
       <InteractiveShadow color="#fff" baseShadowY={0} className="mt-auto z-1">
         <Image
           src="/huddin.webp"
@@ -18,26 +17,4 @@ export default function Home() {
       </InteractiveShadow>
     </section>
   );
-}
-
-export function HuddinVideoMask() {
-  return (
-    <div className="flex-1 flex items-center justify-center overflow-hidden p-4 pt-4">
-      {/* WebP animasi di belakang */}
-      {/* Teks yang jadi “mask” */}
-      <h2
-        className="text-6xl md:text-7xl lg:text-9xl font-extrabold text-transparent select-none drop-shadow-lg"
-        style={{
-          backgroundImage: 'url(/koi.webp)',
-          backgroundRepeat: 'no-repeat',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          WebkitBackgroundClip: 'text',
-          backgroundClip: 'text',
-        }}
-      >
-        Huddin.
-      </h2>
-    </div>
-  )
 }
