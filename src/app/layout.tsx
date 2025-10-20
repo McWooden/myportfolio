@@ -91,7 +91,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${montserrat.variable} ${poppins.variable} antialiased flex flex-col bg-[royalblue]`}>
+      <body className={`${montserrat.variable} ${poppins.variable} antialiased flex flex-col`}>
         {children}
       </body>
     </html>

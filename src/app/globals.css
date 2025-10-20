@@ -3,6 +3,7 @@
 @theme inline {
   --font-primary: 'Montserrat', sans-serif;
   --font-secondary: 'Poppins', sans-serif;
+  --color-base: #f8fafd;
 }
 
 * {
@@ -15,4 +16,10 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
   min-height: 100dvh;
+  background-color: var(--color-base);
+}
+
+.my-bg-blue-radial-bg-at-bottom {
+  background: radial-gradient(circle at bottom, #5375da 0%, #4169e1 100%);
+  /* Require: Add height or other utilities for full coverage */
 }
