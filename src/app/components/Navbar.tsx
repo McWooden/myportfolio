@@ -51,7 +51,7 @@ export default function Navbar() {
 
   return (
     <div className='navbar'>
-      <div id='desktop-navbar' className={cn("flex gap-2 justify-between","fixed top-0 left-0 right-0 z-30 transition-colors duration-300 p-4 px-8", 
+      <div id='desktop-navbar' className={cn("flex gap-2 justify-between","fixed top-0 left-0 right-0 z-30 transition-colors duration-300 p-4 md:px-6 lg:px-8", 
         scrolled ? 'bg-white shadow-md text-just-purple' : 'bg-transparent text-white')}
         >
         <Link href={'/'} className='flex gap-2 items-center'>
