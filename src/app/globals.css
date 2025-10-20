@@ -20,6 +20,6 @@ body {
 }
 
 .my-bg-radial {
-  background: radial-gradient(circle at bottom, #5375da 0%, #4169e1 100%);
+  background: radial-gradient(circle at bottom, #4169e1 0%,  #4716ed 100%);
   /* Require: Add height or other utilities for full coverage */
 }
