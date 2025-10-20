@@ -26,7 +26,7 @@ export function HuddinVideoMask() {
       {/* WebP animasi di belakang */}
       {/* Teks yang jadi “mask” */}
       <h2
-        className="text-5xl md:text-7xl lg:text-9xl font-extrabold text-transparent select-none drop-shadow-lg"
+        className="text-6xl md:text-7xl lg:text-9xl font-extrabold text-transparent select-none drop-shadow-lg"
         style={{
           backgroundImage: 'url(/koi.webp)',
           backgroundRepeat: 'no-repeat',
