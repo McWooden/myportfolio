@@ -12,7 +12,7 @@ export default function Home() {
           width={400}
           height={400}
           priority
-          className="-mb-4"
+          className="-mb-6"
         />
       </InteractiveShadow>
     </section>
