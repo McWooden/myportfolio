@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     template: '%s | Huddin | KardusDeveloper',
   },
   description: 'My Personal Portfolio.',
-  keywords: ['nextjs', 'app', 'example'],
+  keywords: ['nextjs', 'app', 'portfolio', 'programmer magelang', 'web developer magelang'],
   authors: [{ name: 'Sholahuddin Ahmad' }],
   creator: 'Sholahuddin Ahmad',
   publisher: 'KardusDeveloper',
@@ -40,15 +40,15 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'Huddin | KardusDeveloper - Personal Portfolio',
-    description: 'My Personal Portfolio. Journey of KardusDeveloper',
+    title: 'Huddin | KardusDeveloper',
+    description: 'My Personal Portfolio. Journey of Sholahuddin Ahmad and KardusDeveloper. #vibeCoding #naturalLearning',
     url: 'https://kardusdeveloper.vercel.app',
     siteName: 'Your App',
     images: [
       {
-        url: 'https://kardusdeveloper.vercel.app/og-image.jpg',
-        width: 1200,
-        height: 630,
+        url: '/huddin.webp',
+        width: 400,
+        height: 400,
         alt: 'Your App Open Graph Image',
       },
     ],
@@ -57,10 +57,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Your App',
-    description: 'A description of your app goes here.',
-    images: ['https://kardusdeveloper.vercel.app/twitter-image.jpg'],
-    creator: '@yourtwitterhandle',
+    title: 'Huddin | KardusDeveloper',
+    description: 'My Personal Portfolio. Journey of Sholahuddin Ahmad and KardusDeveloper. #vibeCoding #naturalLearning',
+    images: ['/twitter-image.jpg'],
+    creator: '@halohuddin',
   },
   robots: {
     index: true,
@@ -75,13 +75,12 @@ export const metadata: Metadata = {
   },
   verification: {
     google: 'your-google-verification-token',
-    yandex: 'your-yandex-verification-token',
     yahoo: 'your-yahoo-verification-token',
   },
   icons: {
-    icon: '/favicon.ico',
-    shortcut: '/favicon-16x16.png',
-    apple: '/apple-touch-icon.png',
+    icon: '/favicon/favicon.ico',
+    shortcut: '/favicon/favicon-16x16.png',
+    apple: '/favicon/apple-touch-icon.png',
   },
 };
 

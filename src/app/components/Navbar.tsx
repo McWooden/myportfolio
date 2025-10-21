@@ -89,25 +89,26 @@ export default function Navbar() {
       {/* Mobile menu sidebar */}
       <div
         className={cn(
-          'fixed top-0 right-0 h-full w-80 bg-white z-50 md:hidden transform transition-all duration-300 ease-in-out shadow-lg',
+          'fixed top-0 right-0 h-full w-60 bg-white z-50 md:hidden transform transition-all duration-300 ease-in-out shadow-lg',
           isOpen ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'
         )}
       >
         <div className="p-4 h-full flex flex-col">
-          <h2 className='text-xl font-bold text-just-purple'>Menu</h2>
-          <nav className="flex flex-col font-secondary mt-10">
+          <div className='flex gap-2 items-end'>
+            <h2 className='text-xl font-bold text-just-purple leading-[.7]'>Menu</h2>
+            <div className='bg-just-purple h-1 w-full'></div>
+          </div>
+          <nav className="flex flex-col font-secondary flex-1 items-center justify-center gap-6">
             {links.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="py-2 hover:underline block text-just-purple"
+                className="py-2 hover:underline block text-just-purple text-center"
                 onClick={() => setIsOpen(false)}
               >
                 {link.name}
               </Link>
             ))}
-          </nav>
-          <div className="mt-auto">
             <Link
               href={'/#contact'}
               className="shadow-xl p-3 px-6 rounded-full border-2 bg-just-purple border-just-purple text-white duration-300 block text-center"
@@ -115,7 +116,7 @@ export default function Navbar() {
             >
               Contact Me
             </Link>
-          </div>
+          </nav>
         </div>
       </div>
     </div>
