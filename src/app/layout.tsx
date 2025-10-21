@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Huddin | KardusDeveloper',
-    description: 'description: "A journey of code, growth, and creativity. Follow Sholahuddin Ahmad — aka KardusDeveloper — as he crafts ideas into digital experiences. #vibeCoding #naturalLearning #fullStackJourney #codeWithSoul #digitalCraft"',
+    description: "A journey of code, growth, and creativity. Follow Sholahuddin Ahmad — aka KardusDeveloper — as he crafts ideas into digital experiences. #vibeCodingAndNaturalLearning",
     url: 'https://kardusdeveloper.vercel.app',
     siteName: 'Your App',
     images: [
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Huddin | KardusDeveloper',
-    description: 'description: "A journey of code, growth, and creativity. Follow Sholahuddin Ahmad — aka KardusDeveloper — as he crafts ideas into digital experiences. #vibeCoding #naturalLearning #fullStackJourney #codeWithSoul #digitalCraft"',
+    description: "A journey of code, growth, and creativity. Follow Sholahuddin Ahmad — aka KardusDeveloper — as he crafts ideas into digital experiences. #vibeCodingAndNaturalLearning",
     images: ['/twitter-image.jpg'],
     creator: '@halohuddin',
   },
