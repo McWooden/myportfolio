@@ -7,8 +7,8 @@ import Link from 'next/link';
 import { LuMenu } from "react-icons/lu";
 
 const links = [
-  { name: 'Home', href: '/#' },
-  { name: 'About', href: '/#about' },
+  { name: 'Persona', href: '/persona' },
+  { name: 'Network', href: '/network' },
   { name: 'Projects', href: '/#projects' },
 ];
 
@@ -52,10 +52,10 @@ export default function Navbar() {
   return (
     <div className='navbar'>
       <div id='desktop-navbar' className={cn("flex gap-2 justify-between","fixed top-0 left-0 right-0 z-30 transition-colors duration-300 p-4 md:px-6 lg:px-8", 
-        scrolled ? 'bg-white shadow-md text-just-purple' : 'bg-transparent text-white')}
+        scrolled ? 'bg-white shadow-md text-just-black' : 'bg-transparent text-white')}
         >
         <Link href={'/'} className='flex gap-2 items-center'>
-          <h2 id='icon-text' className='text-2xl font-bold opacity-0'>Huddin.</h2>
+          <h2 id='icon-text' className='text-2xl font-bold opacity-0 font-secondary'>Huddin.</h2>
         </Link>
         <div className='hidden md:flex gap-2 font-secondary'>
           <nav className='flex gap-6 px-8 items-center'>
