@@ -72,7 +72,7 @@ export default function Navbar() {
         {/* Mobile menu */}
         <div id='mobile-navbar' className='flex md:hidden opacity-0'>
           <button onClick={() => setIsOpen(!isOpen)}>
-            <LuMenu size={30} />
+            <LuMenu size={30} fill='#300a44'/>
           </button>
         </div>
       </div>
