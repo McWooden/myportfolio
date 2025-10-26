@@ -7,15 +7,22 @@
   --color-just-black: #0e100f;
   --color-just-blue: #4169e1;
   --color-just-purple: #4716ed;
+  --color-dark-purple: #300a44;
 }
 
 * {
   font-family: var(--font-secondary);
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-primary);
+@layer base {
+  body {
+    @apply text-just-black
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-primary;
+  }
 }
+
 
 body {
   min-height: 100dvh;
