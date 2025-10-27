@@ -55,13 +55,13 @@ export default function Hero() {
     <section className="relative flex-1 flex flex-col items-center h-[100dvh] overflow-hidden my-bg-radial min-h-[100dvh]"
       style={{ paddingTop: `${navHeight}px` }}
     >
-      <div className="text-white w-11/12 md:w-1/3 mr-auto p-4 md:px-6 lg:px-8 h-fit">
-        <h2 id='intro-heading' className="text-2xl font-bold opacity-0 my-1 md:my-4">Hi, Aku Huddin</h2>
+      <div className="text-white w-11/12 md:w-1/3 lg:w-5/12 mr-auto p-4 md:px-6 lg:px-8 h-fit xl:w-1/2 xl:mb-50">
+        <h2 id='intro-heading' className="text-2xl lg:text-4xl font-semibold opacity-0 my-1 md:my-4">Hi, Aku Huddin</h2>
         <div className="flex flex-col">
-            <p id="intro-paragraph-1" className="text-md opacity-0">
+            <p id="intro-paragraph-1" className="text-md lg:text-xl xl:text-2xl opacity-0">
               Aku bantu orang bikin professional web portofolio yang lagi trending 
             </p>
-            <p id="intro-paragraph-2" className="text-md opacity-0">
+            <p id="intro-paragraph-2" className="text-md lg:text-xl xl:text-2xl opacity-0">
               dan bikin mereka terhubung sama agensi marketing terpercaya.
             </p>
         </div>
