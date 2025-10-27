@@ -17,11 +17,11 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
-    animate('#icon-text', {
-      opacity: [0, 1],
-      duration: 1000,
-      directions: 'alternate',
-    });
+    // animate('#icon-text', {
+    //   opacity: [0, 1],
+    //   duration: 1000,
+    //   directions: 'alternate',
+    // });
     animate('.nav-link', {
       opacity: [0, 1],
       duration: 1000,
@@ -50,12 +50,12 @@ export default function Navbar() {
   }, []);
 
   return (
-    <div className='navbar'>
+    <div id='navbar'>
       <div id='desktop-navbar' className={cn("flex gap-2 justify-between","fixed top-0 left-0 right-0 z-30 transition-colors duration-300 p-4 md:px-6 lg:px-8", 
         scrolled ? 'bg-white shadow-md' : 'bg-transparent text-white')}
         >
         <Link href={'/'} className='flex gap-2 items-center'>
-          <h2 id='icon-text' className={cn('text-2xl font-medium opacity-0 font-secondary', scrolled && 'text-dark-purple' )}>Huddin.</h2>
+          <h2 id='icon-text' className={cn('text-2xl font-medium font-secondary', scrolled ? 'opacity-100 text-dark-purple' : 'opacity-0 ' )}>Huddin.</h2>
         </Link>
         <div className='hidden md:flex gap-2 font-secondary'>
           <nav className='flex gap-6 px-8 items-center'>
@@ -72,7 +72,7 @@ export default function Navbar() {
         {/* Mobile menu */}
         <div id='mobile-navbar' className='flex md:hidden opacity-0'>
           <button onClick={() => setIsOpen(!isOpen)}>
-            <LuMenu size={30} stroke='#300a44'/>
+            <LuMenu size={30} stroke={scrolled ? '#300a44': '#ffffff'}/>
           </button>
         </div>
       </div>
