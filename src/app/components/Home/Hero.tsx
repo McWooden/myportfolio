@@ -40,7 +40,17 @@ export default function Hero() {
 
       window.addEventListener('resize', setNavbarHeight)
 
-      animate('#blob', {
+      animate('#blob-1', {
+        scale: [.5, 1],
+        opacity: [.5, 1],
+        ease: spring({
+          bounce: 0.4,
+          duration: 1000
+        }),
+        delay: 1000,
+        directions: 'alternate',
+      });
+      animate('#blob-2', {
         scale: [.5, 1],
         opacity: [.5, 1],
         ease: spring({
@@ -67,8 +77,11 @@ export default function Hero() {
         </div>
       </div>
       <div>
-        <InteractiveElement className="absolute -bottom-40 left-1/2 -translate-x-1/2 opacity-0" id="blob" amountX={10} amountY={10} transition="transform 300ms ease-out">
+        <InteractiveElement className="absolute -bottom-40 left-1/2 -translate-x-1/2 opacity-0" id="blob-2" amountX={10} amountY={10} transition="transform 600ms ease-out">
           <div className="w-120 h-120 bg-radial from-transparent to-white/20 rounded-full"></div>
+        </InteractiveElement>
+        <InteractiveElement className="absolute -bottom-30 left-1/2 -translate-x-1/2 opacity-0" id="blob-1" amountX={5} amountY={5} transition="transform 300ms ease-out">
+          <div className="w-100 h-100 bg-radial from-transparent to-white/20 rounded-full"></div>
         </InteractiveElement>
         <div className="mt-auto z-1 absolute bottom-0 left-1/2 -translate-x-1/2 w-full">
           <Image
