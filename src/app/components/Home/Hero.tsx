@@ -25,16 +25,22 @@ export default function Hero() {
         delay: 1200,
         directions: 'alternate',
       });
-      animate('#intro-paragraph-1', {
-        opacity: [0, .8],
+      animate('#name', {
+        opacity: [0, 1],
         duration: 1000,
         delay: 1500,
         directions: 'alternate',
       });
+      animate('#intro-paragraph-1', {
+        opacity: [0, .8],
+        duration: 2000,
+        delay: 1800,
+        directions: 'alternate',
+      });
       animate('#intro-paragraph-2', {
         opacity: [0, .8],
-        duration: 1000,
-        delay: 1800,
+        duration: 3000,
+        delay: 2100,
         directions: 'alternate',
       });
 
@@ -65,13 +71,13 @@ export default function Hero() {
     <section className="relative flex-1 flex flex-col items-center h-[100dvh] overflow-hidden my-bg-radial min-h-[100dvh]"
       style={{ paddingTop: `${navHeight}px` }}
     >
-      <div className="text-white w-11/12 md:w-1/3 lg:w-5/12 mr-auto p-4 md:px-6 lg:px-8 h-fit xl:w-1/2 xl:mb-50">
-        <h2 id='intro-heading' className="text-2xl lg:text-4xl font-semibold opacity-0 my-1 md:my-4">Hi, Aku Huddin</h2>
-        <div className="flex flex-col">
-            <p id="intro-paragraph-1" className="text-md lg:text-xl xl:text-2xl opacity-0">
-              Aku bantu orang bikin professional web portofolio yang lagi trending 
+      <div className="text-white w-11/12 md:w-1/3 lg:w-6/12 mr-auto p-4 md:px-6 lg:px-8 h-fit xl:w-1/2 xl:mb-50">
+        <h2 id='intro-heading' className="text-2xl lg:text-4xl font-semibold opacity-0 my-1 md:my-4">Hi, <span id="name">Aku Huddin</span></h2>
+        <div className="flex flex-col text-md lg:text-xl xl:text-2xl leading-loose">
+            <p id="intro-paragraph-1" className="opacity-0">
+              Aku bantu orang bikin <span className="font-tertiary bg-white/10 rounded py-1 px-2">professional</span> web portofolio yang lagi <span className="font-tertiary bg-white/10 rounded py-1 px-2">trending</span>
             </p>
-            <p id="intro-paragraph-2" className="text-md lg:text-xl xl:text-2xl opacity-0">
+            <p id="intro-paragraph-2" className="opacity-0">
               dan bikin mereka terhubung sama agensi marketing terpercaya.
             </p>
         </div>
@@ -83,7 +89,7 @@ export default function Hero() {
         <InteractiveElement className="absolute -bottom-30 left-1/2 -translate-x-1/2 opacity-0" id="blob-1" amountX={5} amountY={5} transition="transform 300ms ease-out">
           <div className="w-100 h-100 bg-radial from-transparent to-white/20 rounded-full"></div>
         </InteractiveElement>
-        <div className="mt-auto z-1 absolute bottom-0 left-1/2 -translate-x-1/2 w-full">
+        <InteractiveElement className="mt-auto z-1 absolute bottom-0 left-1/2 -translate-x-1/2 w-full" amountX={1} amountY={1} transition="transform 100ms ease-out">
           <Image
             src="/huddin.webp"
             alt="Welcome Image"
@@ -91,8 +97,8 @@ export default function Hero() {
             height={400}
             priority
             className="-mb-6 mx-auto"
-          />
-        </div>
+            />
+        </InteractiveElement>
       </div>
     </section>
   );

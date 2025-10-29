@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Montserrat, Poppins } from "next/font/google";
+import { Montserrat, Poppins, Courgette } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 
@@ -11,9 +11,15 @@ export const montserrat = Montserrat({
 
 export const poppins = Poppins({
   subsets: ['latin'],
-  weight: ['400', '700'],
+  weight: '400',
   variable: '--font-poppins',
   display: 'swap', // Optional: Improves loading by swapping in fallback first
+});
+
+export const courgette = Courgette({
+  subsets: ['latin'],
+  weight: '400',
+  variable: '--font-courgette',
 });
 
 export const metadata: Metadata = {
@@ -94,7 +100,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon/favicon.ico" sizes="any" />
       </head>
-      <body className={`${montserrat.variable} ${poppins.variable} antialiased flex flex-col`}>
+      <body className={`${montserrat.variable} ${poppins.variable} ${courgette.variable} antialiased flex flex-col`}>
         <Navbar/>
         {children}
       </body>

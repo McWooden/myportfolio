@@ -3,6 +3,7 @@
 @theme inline {
   --font-primary: 'Montserrat', sans-serif;
   --font-secondary: 'Poppins', sans-serif;
+  --font-tertiary: 'Courgette', cursive;
   --color-base: #f8fafd;
   --color-just-black: #0e100f;
   --color-just-blue: #4169e1;
@@ -10,12 +11,10 @@
   --color-dark-purple: #300a44;
 }
 
-* {
-  font-family: var(--font-secondary);
-}
 
 @layer base {
   body {
+    font-family: var(--font-secondary);
     @apply text-just-black
   }
   h1, h2, h3, h4, h5, h6 {
