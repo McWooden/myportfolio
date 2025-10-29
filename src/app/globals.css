@@ -3,7 +3,7 @@
 @theme inline {
   --font-primary: 'Montserrat', sans-serif;
   --font-secondary: 'Poppins', sans-serif;
-  --font-tertiary: 'Courgette', cursive;
+  --font-tertiary: 'Playfair';
   --color-base: #f8fafd;
   --color-just-black: #0e100f;
   --color-just-blue: #4169e1;
@@ -30,5 +30,4 @@ body {
 
 .my-bg-radial {
   background: radial-gradient(circle at bottom, var(--color-just-blue) 0%, var(--color-just-purple) 100%);
-  /* Require: Add height or other utilities for full coverage */
 }

@@ -73,9 +73,9 @@ export default function Hero() {
     >
       <div className="text-white w-11/12 md:w-1/3 lg:w-6/12 mr-auto p-4 md:px-6 lg:px-8 h-fit xl:w-1/2 xl:mb-50">
         <h2 id='intro-heading' className="text-2xl lg:text-4xl font-semibold opacity-0 my-1 md:my-4">Hi, <span id="name">Aku Huddin</span></h2>
-        <div className="flex flex-col text-md lg:text-xl xl:text-2xl leading-loose">
+        <div className="flex flex-col text-md lg:text-xl xl:text-2xl leading-relaxed">
             <p id="intro-paragraph-1" className="opacity-0">
-              Aku bantu orang bikin <span className="font-tertiary bg-white/10 rounded py-1 px-2">professional</span> web portofolio yang lagi <span className="font-tertiary bg-white/10 rounded py-1 px-2">trending</span>
+              Aku bantu orang bikin <span className="font-tertiary text-3xl">professional</span> web portofolio yang lagi <span className="font-tertiary text-3xl">trending</span>
             </p>
             <p id="intro-paragraph-2" className="opacity-0">
               dan bikin mereka terhubung sama agensi marketing terpercaya.
