@@ -71,15 +71,15 @@ export default function Hero() {
     <section className="relative flex-1 flex flex-col items-center h-[100dvh] overflow-hidden my-bg-radial min-h-[100dvh]"
       style={{ paddingTop: `${navHeight}px` }}
     >
-      <div className="text-white w-11/12 md:w-1/3 lg:w-6/12 mr-auto p-4 md:px-6 lg:px-8 h-fit xl:w-1/2 xl:mb-50">
+      <div className="text-white w-10/12 md:w-1/3 lg:w-6/12 mr-auto p-4 md:px-6 lg:px-8 h-fit xl:w-1/2 xl:mb-50">
         <h2 id='intro-heading' className="text-2xl lg:text-4xl font-semibold opacity-0 my-1 md:my-4">Hi, <span id="name">aku Huddin</span>.</h2>
         <div className="flex flex-col text-md lg:text-xl xl:text-2xl leading-relaxed">
-            <p id="intro-paragraph-1" className="opacity-0">
-              Aku bantu orang bikin <span className="font-tertiary text-3xl">professional</span> web portofolio yang lagi <span className="font-tertiary text-3xl">trending</span>
-            </p>
-            <p id="intro-paragraph-2" className="opacity-0">
-              dan bikin mereka terhubung sama agensi marketing terpercaya.
-            </p>
+          <p id="intro-paragraph-1" className="opacity-0">
+            Aku bantu orang bikin <span className="font-tertiary">professional</span> web portofolio yang lagi <span className="font-tertiary">trending</span>
+          </p>
+          <p id="intro-paragraph-2" className="opacity-0">
+            dan bikin mereka terhubung sama agensi marketing <span className="font-tertiary">terpercaya</span>.
+          </p>
         </div>
       </div>
       <div>

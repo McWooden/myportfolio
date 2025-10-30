@@ -1,25 +1,25 @@
 import type { Metadata } from "next";
-import { Montserrat, Poppins, Playfair } from "next/font/google";
+import { Montserrat, Poppins, Bodoni_Moda } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 
-export const montserrat = Montserrat({
+export const font_primary = Montserrat({
   subsets: ['latin'],
   weight: ['400', '700'],
   variable: '--font-montserrat',
 });
 
-export const poppins = Poppins({
+export const font_secondary = Poppins({
   subsets: ['latin'],
   weight: '400',
   variable: '--font-poppins',
   display: 'swap', // Optional: Improves loading by swapping in fallback first
 });
 
-export const playfair = Playfair({
+export const font_tertiary = Bodoni_Moda({
   subsets: ['latin'],
   weight: '400',
-  variable: '--font-playfair',
+  variable: '--font-bodoni-moda',
 });
 
 export const metadata: Metadata = {
@@ -100,7 +100,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/favicon/favicon.ico" sizes="any" />
       </head>
-      <body className={`${montserrat.variable} ${poppins.variable} ${playfair.variable} antialiased flex flex-col`}>
+      <body className={`${font_primary.variable} ${font_secondary.variable} ${font_tertiary.variable} antialiased flex flex-col`}>
         <Navbar/>
         {children}
       </body>

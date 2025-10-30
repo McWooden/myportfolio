@@ -3,7 +3,7 @@
 @theme inline {
   --font-primary: 'Montserrat', sans-serif;
   --font-secondary: 'Poppins', sans-serif;
-  --font-tertiary: 'Playfair';
+  --font-tertiary: "Bodoni Moda", serif;
   --color-base: #f8fafd;
   --color-just-black: #0e100f;
   --color-just-blue: #4169e1;
@@ -20,8 +20,15 @@
   h1, h2, h3, h4, h5, h6 {
     @apply font-primary;
   }
+  .font-tertiary {
+    @apply relative text-2xl;
+  }
+  .font-tertiary::after {
+    content: '';
+    width: full;
+    @apply absolute bg-white/10 h-1/3 -mb-1 w-full skew-x-12 left-0 bottom-1 -z-10 rounded-sm;
+  }
 }
-
 
 body {
   min-height: 100dvh;
