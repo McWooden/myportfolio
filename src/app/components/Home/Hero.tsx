@@ -71,8 +71,8 @@ export default function Hero() {
     <section className="relative flex-1 flex flex-col items-center h-[100dvh] overflow-hidden my-bg-radial min-h-[100dvh]"
       style={{ paddingTop: `${navHeight}px` }}
     >
-      <div className="text-white w-10/12 md:w-1/3 lg:w-6/12 mr-auto p-4 md:px-6 lg:px-8 h-fit xl:w-1/2 xl:mb-50">
-        <h2 id='intro-heading' className="text-2xl lg:text-4xl font-semibold opacity-0 my-1 md:my-4">Hi, <span id="name">aku Huddin</span>.</h2>
+      {/* <div className="text-white w-10/12 md:w-1/3 lg:w-6/12 xl:w-1/2 xl:mb-50 mr-auto p-4 md:px-6 lg:px-8 h-fit">
+        <h2 id='intro-heading' className="text-2xl lg:text-4xl font-semibold opacity-0 my-1 md:my-4">Hi, aku <span id="name">Huddin</span>.</h2>
         <div className="flex flex-col text-md lg:text-xl xl:text-2xl leading-relaxed">
           <p id="intro-paragraph-1" className="opacity-0">
             Aku bantu orang bikin <span className="font-tertiary">professional</span> web portofolio yang lagi <span className="font-tertiary">trending</span>
@@ -80,6 +80,11 @@ export default function Hero() {
           <p id="intro-paragraph-2" className="opacity-0">
             dan bikin mereka terhubung sama agensi marketing <span className="font-tertiary">terpercaya</span>.
           </p>
+        </div>
+      </div> */}
+      <div className="text-white w-10/12 md:w-1/3 lg:w-6/12 xl:w-1/2 xl:mb-50 mr-auto p-4 md:px-6 lg:px-8 h-fit">
+        <div id='intro-heading' className="text-2xl lg:text-4xl font-semibold opacity-0 my-1 md:my-4">
+          Hi, aku <span id="name">Huddin.</span>
         </div>
       </div>
       <div>
@@ -89,7 +94,7 @@ export default function Hero() {
         <InteractiveElement className="absolute -bottom-30 left-1/2 -translate-x-1/2 opacity-0" id="blob-1" amountX={5} amountY={5} transition="transform 300ms ease-out">
           <div className="w-100 h-100 bg-radial from-transparent to-white/20 rounded-full"></div>
         </InteractiveElement>
-        <InteractiveElement className="mt-auto z-1 absolute bottom-0 left-1/2 -translate-x-1/2 w-full" amountX={1} amountY={1} transition="transform 100ms ease-out">
+        {/* <InteractiveElement className="mt-auto z-1 absolute bottom-0 left-1/2 -translate-x-1/2 w-full" amountX={1} amountY={1} transition="transform 100ms ease-out">
           <Image
             src="/huddin.webp"
             alt="Welcome Image"
@@ -98,7 +103,22 @@ export default function Hero() {
             priority
             className="-mb-6 mx-auto"
             />
-        </InteractiveElement>
+        </InteractiveElement> */}
+        <div className="mt-auto z-1 absolute bottom-0 left-1/2 -translate-x-1/2 w-full">
+          <video
+            width="400"
+            height="400"
+            loop
+            autoPlay
+            muted
+            playsInline 
+            preload="none"
+            className="-mb-6 mx-auto"
+          >
+            <source src="/animated/mustprefect.webm" type="video/webm" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
       </div>
     </section>
   );
