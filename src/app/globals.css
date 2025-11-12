@@ -38,3 +38,17 @@ body {
 .my-bg-radial {
   background: radial-gradient(circle at bottom, var(--color-just-blue) 0%, var(--color-just-purple) 100%);
 }
+
+@keyframes breathing {
+  0% { transform: scale(1); }         /* mulai normal */
+  /* 30% { transform: scale(1.08, 1.02); } tarik napas, lebih lambat di awal */
+  50% { transform: scale(1.12, 1.04); } /* puncak tarikan */
+  /* 70% { transform: scale(1.06, 1.01); } buang napas, lebih cepat tapi halus */
+  100% { transform: scale(1); }       /* kembali normal */
+}
+
+.diaphragmatic {
+  animation: breathing 8s ease-in-out infinite;
+  will-change: transform;
+  backface-visibility: hidden;
+} 
