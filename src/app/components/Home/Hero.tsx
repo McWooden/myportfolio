@@ -175,8 +175,8 @@ export default function Hero() {
         <InteractiveElement className="absolute -bottom-30 left-1/2 -translate-x-1/2 opacity-0" id="blob-1" amountX={5} amountY={5} transition="transform 300ms ease-out">
           <div className="w-100 h-100 bg-radial from-transparent to-white/20 rounded-full"></div>
         </InteractiveElement>
-        <div className="mt-auto z-1 bottom-0 left-1/2 -translate-x-1/2 w-full absolute"> {/* Container relative untuk stack videos */}
-          <div className="video-container relative w-[500px] h-[500px] mx-auto -mb-6"> {/* Fixed size container */}
+        <div className="mt-auto z-1 absolute bottom-0 left-1/2 -translate-x-1/2 w-full">
+          <div className="video-container relative w-full max-w-[500px] aspect-square mx-auto -mb-6"> {/* Responsive: full width on mobile, max 500px on larger screens */}
             {videos.map((video, index) => (
               <video
                 key={index}
@@ -185,13 +185,11 @@ export default function Hero() {
                 muted
                 playsInline
                 preload="auto" // Preload semua video
-                className="absolute top-0 left-0 w-full h-full ease-in-out" // Smooth opacity transition
+                className="absolute top-0 left-0 w-full h-full transition-opacity duration-300 ease-in-out" // Smooth opacity transition, full size
                 style={{
                   opacity: 0,
                   zIndex: 1,
                 }}
-                width="500"
-                height="500"
               >
                 Your browser does not support the video tag.
               </video>
