@@ -55,7 +55,7 @@ export default function Navbar() {
         scrolled ? 'bg-white shadow-md' : 'bg-transparent text-white')}
         >
         <Link href={'/'} className='flex gap-2 items-center'>
-          <h2 id='icon-text' className={cn('text-2xl font-medium font-secondary', scrolled ? 'opacity-100 text-dark-purple' : 'opacity-0 ' )}>Huddin.</h2>
+          <h2 id='icon-text' className={cn('text-2xl font-medium font-secondary', scrolled ? 'text-dark-purple' : 'text-white' )}>Hi, name's Huddin.</h2>
         </Link>
         <div className='hidden md:flex gap-2 font-secondary'>
           <nav className='flex gap-6 px-8 items-center'>
